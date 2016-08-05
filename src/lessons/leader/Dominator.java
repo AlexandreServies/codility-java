@@ -15,8 +15,7 @@ public class Dominator {
             return -1;
 
         int candidate = stack.peek();
-        int count = 0;
-        int index = 0;
+        int count = 0, index = 0;
         for (int i = 0; i < A.length; i++)
             if (A[i] == candidate) {
                 count++;
