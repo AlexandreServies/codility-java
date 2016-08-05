@@ -6,8 +6,8 @@ public class MaxSliceSum {
         int maxSlice = 0;
         int maxSliceEndingHere = 0;
 
-        for (int i = 0; i < N; i++) {
-            maxSliceEndingHere = Math.max(0, maxSliceEndingHere + A[i]);
+        for (int n : A) {
+            maxSliceEndingHere = Math.max(0, maxSliceEndingHere + n);
             maxSlice = Math.max(maxSlice, maxSliceEndingHere);
         }
         return maxSlice;
